@@ -1,0 +1,22 @@
+# Ignora fișierele de configurare și scripting generate de unelte software
+
+# Ignora JavaScript/HTML (Adica simularea web sau tool-uri de GUI)
+*.js linguist-vendored
+*.html linguist-vendored
+
+# Ignora Tcl (folosit des de Vivado/Xilinx pentru scriptare)
+*.tcl linguist-vendored
+
+# Ignora Shell (bash scripts) si Batchfile (Windows scripts)
+*.sh linguist-vendored
+*.bat linguist-vendored
+
+# Optional: Ignora alte fisiere de configurare des intalnite in FPGA
+*.xpr linguist-vendored
+*.wdb linguist-vendored
+*.wcfg linguist-vendored
+*.runs/* linguist-vendored
+
+# Asigura-te ca Verilog este detectat (desi este implicit)
+*.v linguist-detectable=true
+*.sv linguist-detectable=true
